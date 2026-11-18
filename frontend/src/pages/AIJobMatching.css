@@ -1,0 +1,282 @@
+
+.ai-matching-page {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f7f7fc;
+  color: #25213b;
+  font-family: Arial, sans-serif;
+}
+
+.ai-matching-header {
+  max-width: 1000px;
+  margin: 0 auto 30px;
+}
+
+.ai-matching-back {
+  display: block;
+  margin-bottom: 28px;
+  padding: 10px 16px;
+  border: 1px solid #dedaf5;
+  border-radius: 9px;
+  background: #fff;
+  color: #5142c6;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ai-matching-eyebrow {
+  color: #6558e8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.ai-matching-header h1 {
+  margin: 12px 0;
+  font-size: clamp(30px, 5vw, 42px);
+}
+
+.ai-matching-header p {
+  color: #6d6880;
+  line-height: 1.6;
+}
+
+.ai-matching-selector {
+  max-width: 1000px;
+  margin: 0 auto 28px;
+  padding: 24px;
+  border: 1px solid #e9e5f8;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(41, 29, 85, 0.05);
+}
+
+.ai-matching-selector form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.ai-matching-selector label {
+  font-weight: 700;
+}
+
+.ai-matching-selector select {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  border: 1px solid #d9d5e8;
+  border-radius: 9px;
+  background: #fff;
+  color: #25213b;
+}
+
+.ai-matching-primary,
+.ai-matching-apply {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 9px;
+  background: #6558e8;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.ai-matching-primary:hover,
+.ai-matching-apply:hover {
+  background: #5142c6;
+}
+
+.ai-matching-primary:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.ai-matching-error,
+.ai-matching-message {
+  max-width: 1000px;
+  margin: 16px auto;
+  padding: 14px 16px;
+  border-radius: 9px;
+  line-height: 1.5;
+}
+
+.ai-matching-error {
+  background: #fff0f0;
+  color: #a32626;
+}
+
+.ai-matching-message {
+  background: #eefbf2;
+  color: #216b3b;
+}
+
+.ai-matching-results {
+  max-width: 1000px;
+  margin: 36px auto 0;
+}
+
+.ai-matching-results-heading {
+  margin-bottom: 20px;
+}
+
+.ai-matching-results-heading h2 {
+  margin-bottom: 8px;
+}
+
+.ai-matching-results-heading p {
+  color: #6d6880;
+}
+
+.ai-match-card {
+  margin-bottom: 20px;
+  padding: 24px;
+  border: 1px solid #e7e3f5;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(41, 29, 85, 0.05);
+}
+
+.ai-match-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.ai-match-card h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.ai-match-company {
+  margin: 0 0 8px;
+  color: #5142c6;
+  font-weight: 700;
+}
+
+.ai-match-location {
+  color: #6d6880;
+  font-size: 14px;
+}
+
+.ai-match-score {
+  min-width: 105px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #f0edff;
+  color: #5142c6;
+  text-align: center;
+}
+
+.ai-match-score strong {
+  display: block;
+  font-size: 27px;
+}
+
+.ai-match-score span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ai-match-progress {
+  height: 8px;
+  margin: 18px 0;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #ebe8f5;
+}
+
+.ai-match-progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: #6558e8;
+  transition: width 0.3s ease;
+}
+
+.ai-match-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.ai-match-meta span {
+  padding: 7px 10px;
+  border-radius: 7px;
+  background: #f5f4fa;
+  color: #5d5870;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.ai-match-skills {
+  margin: 20px 0;
+}
+
+.ai-match-skills h4 {
+  margin-bottom: 12px;
+}
+
+.ai-match-skills p {
+  color: #6d6880;
+  font-size: 14px;
+}
+
+.ai-match-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ai-match-skill-tags span {
+  padding: 7px 11px;
+  border: 1px solid #ccebd7;
+  border-radius: 20px;
+  background: #effaf3;
+  color: #246d40;
+  font-size: 13px;
+}
+
+.ai-match-skills.missing .ai-match-skill-tags span {
+  border-color: #f1dfb8;
+  background: #fff8e9;
+  color: #8a6018;
+}
+
+.ai-matching-apply {
+  margin-top: 8px;
+}
+
+.ai-matching-disclaimer {
+  max-width: 1000px;
+  margin: 24px auto;
+  color: #777188;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .ai-matching-page {
+    padding: 18px;
+  }
+
+  .ai-matching-selector,
+  .ai-match-card {
+    padding: 18px;
+  }
+
+  .ai-match-card-top {
+    flex-direction: column;
+  }
+
+  .ai-match-score {
+    align-self: flex-start;
+  }
+
+  .ai-match-card h3 {
+    font-size: 19px;
+  }
+}

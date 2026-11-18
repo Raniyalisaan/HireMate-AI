@@ -1,0 +1,125 @@
+
+.saved-jobs-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f7f7fc;
+  color: #25213b;
+  font-family: Arial, sans-serif;
+}
+
+.saved-jobs-header {
+  margin-bottom: 24px;
+}
+
+.saved-jobs-header h1 {
+  margin-bottom: 8px;
+  color: #020202;
+  font-size: 32px;
+}
+
+.saved-jobs-header p {
+  color: #6b6680;
+}
+
+.saved-jobs-back-button,
+.saved-job-card button,
+.saved-jobs-empty button {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.saved-jobs-back-button {
+  margin-bottom: 24px;
+  border: 1px solid #d6d3f5;
+  background: #ffffff;
+  color: #5144d4;
+}
+
+.saved-jobs-back-button:hover {
+  background: #f0efff;
+}
+
+.saved-jobs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.saved-job-card {
+  padding: 24px;
+  border: 1px solid #e4e3e9;
+  border-radius: 14px;
+  background: #edeaea;
+  box-shadow: 0 5px 18px rgba(18, 18, 18, 0.06);
+}
+
+.saved-job-card h2 {
+  margin-top: 0;
+  color: #0c0c0e;
+  font-size: 21px;
+}
+
+.saved-job-card p {
+  color: #5f5a70;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.saved-job-card button,
+.saved-jobs-empty button {
+  margin-top: 12px;
+  background: #6558e8;
+  color: #ffffff;
+}
+
+.saved-job-card button:hover,
+.saved-jobs-empty button:hover {
+  background: #5144d4;
+}
+
+.saved-jobs-feedback {
+  padding: 12px 16px;
+  margin: 16px 0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.saved-jobs-feedback.success {
+  border: 1px solid #86efac;
+  background: #dcfce7;
+  color: #166534;
+}
+
+.saved-jobs-feedback.error,
+.saved-jobs-error {
+  color: #b91c1c;
+}
+
+.saved-jobs-empty {
+  margin-top: 24px;
+  padding: 36px 24px;
+  border: 1px dashed #c9c4e8;
+  border-radius: 14px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.saved-jobs-empty p {
+  color: #6b6680;
+}
+
+@media (max-width: 600px) {
+  .saved-jobs-page {
+    padding: 22px 16px;
+  }
+
+  .saved-jobs-header h1 {
+    font-size: 26px;
+  }
+}

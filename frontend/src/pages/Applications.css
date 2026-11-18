@@ -1,0 +1,356 @@
+
+.applications-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f7f7fc;
+  color: #25213b;
+  font-family: Arial, sans-serif;
+}
+
+.applications-header h1 {
+  margin-bottom: 10px;
+  color: #21183d;
+  font-size: 32px;
+}
+
+.applications-header p {
+  color: #77738b;
+  line-height: 1.6;
+}
+
+.applications-back-button,
+.applications-empty button {
+  margin: 20px 0;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #6558e8;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.applications-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.application-card,
+.applications-empty {
+  padding: 24px;
+  border: 1px solid #eceaf5;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(37, 33, 59, 0.05);
+}
+
+.application-card h2,
+.applications-empty h2 {
+  color: #30245b;
+  font-size: 20px;
+}
+
+.application-card p,
+.applications-empty p {
+  color: #6f6a82;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.applications-error {
+  color: #c62828;
+}
+
+@media (max-width: 600px) {
+  .applications-page {
+    padding: 22px 16px;
+  }
+
+  .applications-header h1 {
+    font-size: 26px;
+  }
+}
+
+/* ===== HireMate AI Applications Table ===== */
+
+.applications-page {
+  min-height: 100vh;
+  padding: 36px;
+  box-sizing: border-box;
+  background: #f7f7fc;
+  color: #25213b;
+  font-family: Arial, sans-serif;
+}
+
+.applications-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+
+.applications-eyebrow {
+  margin: 0 0 10px;
+  color: #6558e8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.applications-header h1 {
+  margin: 0 0 10px;
+  color: #21183d;
+  font-size: clamp(26px, 3vw, 34px);
+}
+
+.applications-header p:not(.applications-eyebrow) {
+  margin: 0;
+  color: #777187;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.applications-total {
+  min-width: 145px;
+  padding: 18px 22px;
+  border: 1px solid #ece8f5;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(33, 24, 61, 0.04);
+}
+
+.applications-total span,
+.applications-total strong {
+  display: block;
+}
+
+.applications-total span {
+  color: #777187;
+  font-size: 12px;
+}
+
+.applications-total strong {
+  margin-top: 8px;
+  color: #6558e8;
+  font-size: 28px;
+}
+
+.applications-back-button {
+  margin-bottom: 24px;
+  padding: 10px 15px;
+  border: 1px solid #e5e0f2;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #493773;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.applications-back-button:hover {
+  background: #f0edff;
+}
+
+.applications-table-card {
+  overflow: hidden;
+  border: 1px solid #ece8f5;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(33, 24, 61, 0.05);
+}
+
+.applications-table-heading {
+  padding: 23px 24px;
+  border-bottom: 1px solid #eeeaf5;
+}
+
+.applications-table-heading h2 {
+  margin: 0 0 7px;
+  color: #21183d;
+  font-size: 19px;
+}
+
+.applications-table-heading p {
+  margin: 0;
+  color: #777187;
+  font-size: 13px;
+}
+
+.applications-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.applications-table {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.applications-table th {
+  padding: 16px 20px;
+  background: #faf9fd;
+  color: #777187;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.applications-table td {
+  padding: 18px 20px;
+  border-top: 1px solid #f0edf6;
+  color: #5f586f;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.applications-table tbody tr:hover {
+  background: #fcfbff;
+}
+
+.recruiter-cell {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 180px;
+}
+
+.recruiter-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #eeeaff;
+  color: #493773;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.recruiter-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recruiter-name {
+  max-width: 180px;
+  color: #33235b;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.application-job-title {
+  color: #33235b !important;
+  font-weight: 700;
+}
+
+.application-status {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.status-pending {
+  background: #fff3d9;
+  color: #946200;
+}
+
+.status-review {
+  background: #e8f1ff;
+  color: #2458a6;
+}
+
+.status-accepted {
+  background: #e1f7eb;
+  color: #187548;
+}
+
+.status-rejected {
+  background: #ffe8e8;
+  color: #b42323;
+}
+
+.application-view-button {
+  padding: 8px 12px;
+  border: 1px solid #ded7fa;
+  border-radius: 8px;
+  background: #f5f2ff;
+  color: #493773;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.application-view-button:hover {
+  background: #eae4ff;
+}
+
+.applications-empty,
+.applications-message,
+.applications-error {
+  padding: 30px;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.applications-empty {
+  text-align: center;
+}
+
+.applications-empty-icon {
+  font-size: 40px;
+}
+
+.applications-empty h2 {
+  color: #21183d;
+}
+
+.applications-empty p {
+  color: #777187;
+}
+
+.applications-empty button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 9px;
+  background: #6558e8;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.applications-error {
+  color: #b42323;
+}
+
+@media (max-width: 700px) {
+  .applications-page {
+    padding: 20px 14px;
+  }
+
+  .applications-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .applications-total {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .applications-table-heading {
+    padding: 20px 16px;
+  }
+}

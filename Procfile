@@ -1,0 +1,1 @@
+web: gunicorn HireMate_AI.wsgi:application
