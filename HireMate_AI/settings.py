@@ -64,6 +64,12 @@ CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:5173',
     'http://localhost:4173',
     'http://127.0.0.1:4173',
+
+    "https://hiremate-ai-frontend-09r0.onrender.com",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://hiremate-ai-frontend-09r0.onrender.com",
 ]
 
 MIDDLEWARE = [
